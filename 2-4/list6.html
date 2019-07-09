@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div id="app">
+      <table border="1">
+	<tr><th>商品コード</th><th>商品名</th></tr>
+	<tr v-for="item in products">
+	  <td>{{item.code}}</td><td>{{item.name}}</td>
+	</tr>
+      </table>
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list6.js"></script>
+  </body>
+</html>
