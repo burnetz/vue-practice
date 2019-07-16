@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <!--<link rel="stylesheet" href="main.css">-->
+  </head>
+  <body>
+    <div id="app">
+      <p>ご注文をお選びください：{{answer}}</p>
+      <label>
+	<input type="radio" v-model="answer" value="素晴らしい">素晴らしい
+      </label>
+      <label>
+	<input type="radio" v-model="answer" value="普通">普通
+      </label>
+      <label>
+	<input type="radio" v-model="answer" value="まだまだ">まだまだ
+      </label>
+      
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list6.js"></script>
+  </body>
+</html>
