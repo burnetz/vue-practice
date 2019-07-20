@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <!--<link rel="stylesheet" href="main.css">-->
+  </head>
+  <body>
+    <div id="app">
+      <p>分類：{{selectedCategory}}</p>
+      <select v-model="category" multiple>
+	<option value="宿泊費">宿泊費</option>
+	<option value="食費">食費</option>
+	<option value="交通費">交通費</option>
+      </select>      
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list8.js"></script>
+  </body>
+</html>

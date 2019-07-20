@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <!--<link rel="stylesheet" href="main.css">-->
+  </head>
+  <body>
+    <div id="app">
+      <p>ご注文をお選びください：{{selection}}</p>
+      <label>
+	<input type="checkbox" v-model="answer" value="ケーキ">ケーキ
+      </label>
+      <label>
+	<input type="checkbox" v-model="answer" value="紅茶">紅茶
+      </label>
+      <label>
+	<input type="checkbox" v-model="answer" value="コーヒー">コーヒー
+      </label>
+      
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list5.js"></script>
+  </body>
+</html>

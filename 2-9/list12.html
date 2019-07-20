@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <!--<link rel="stylesheet" href="main.css">-->
+  </head>
+  <body>
+    <div id="app">
+      <fieldset>
+	<legend>あなたの好きな色は？</legend>
+	<input type="color" v-model="color"> {{color}}<br>
+	赤：<input type="range" v-model.number="red" min="0" max="255"> {{red}}<br>
+	緑：<input type="range" v-model.number="green" min="0" max="255"> {{green}}<br>
+	青：<input type="range" v-model.number="blue" min="0" max="255"> {{blue}}<br>
+      </fieldset>
+	
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list12.js"></script>
+  </body>
+</html>

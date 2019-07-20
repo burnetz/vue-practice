@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <!--<link rel="stylesheet" href="main.css">-->
+  </head>
+  <body>
+    <div id="app">
+      <p>ご希望到着日：{{arrival_date}}</p>
+      <input type="date" v-model="arrival_date" v-bind:min="min_date">
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list11.js"></script>
+  </body>
+</html>
