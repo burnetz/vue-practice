@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div id="app">
+      <button v-on:click="show = !show">表示を切り替える</button>
+      <transition name="fade">
+	<p v-if="show">
+	  吾輩は猫である。名前はまだ無い。<br>
+	  どこで生まれたかとんと見当がつかぬ。<br>
+	  なんでも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+	</p>
+      </transition>
+      <transition name="slideInLeft">
+	<p v-if="show">
+	  吾輩は猫である。名前はまだ無い。<br>
+	  どこで生まれたかとんと見当がつかぬ。<br>
+	  なんでも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+	</p>
+      </transition>
+      
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script src="list1.js"></script>
+  </body>
+</html>
