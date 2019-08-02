@@ -11,7 +11,7 @@ var app = new Vue({
 	//「セール対象」のチェック状態
 	showSaleItem: false,
 	//「送料無料」のチェック状態
-	showDateItem: false,
+	showDelvFree: false,
 	//「並び替え」の選択肢（1:標準　2:価格が安い順）
 	sortOrder: 1,
 	//商品リスト
