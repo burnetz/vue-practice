@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <item id="1">
+    <name>商品A</name>
+    <price>1280</price>
+  </item>
+  <item id="2">
+    <name>商品B</name>
+    <price>1980</price>
+  </item>
+</products>
