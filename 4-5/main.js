@@ -23,19 +23,18 @@ var app = new Vue({
     },
     //ライフサイクルハック
     created: function() {
-	// JSONPのURL（ここではlocalhostで試す）
-	var url='http://localhost/vue-practice/4-5/products.js';
+	// JSONを返すAPIのURL
+	var url='http://localhost/vue-practice/4-5/products.php';
 
-	//非同期通信でJSONPを読み込む
+	//非同期通信でJSONを読み込む
 	$.ajax({
 	    url : url, //通信先URL
 	    type : 'GET', //使用するHTTPメソッド
-	    dataType: 'jsonp', //レスポンスのデータタイプ
-	    jsonp : 'callback', //クエリパラメータの名前
-	    jsonpCallback: 'products' //コールバック関数の名前
+	    dataType: 'json', //レスポンスのデータタイプ
 	})
 
 	    .done(function(data, textStatus, jqXHR) {
+		console.log("SUCCeSS");
 		this.products = data;
 	    }.bind(this))
 
