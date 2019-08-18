@@ -28,9 +28,6 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 }
 
-//print_r( $products);
-
-echo JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE;
 //PHPの配列をJSONに変換
 $json = json_encode($products, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
 
