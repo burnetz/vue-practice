@@ -52,8 +52,43 @@
 	  </div>
 
 	  <!--挙式日-->
-	      
+	  <div class="form-group row">
+	    <label class="col-md-3 col-form-label pt-0" for="wedding_date">挙式日
+	      <span class="badge badge-danger">必須</span>
+	    </label>
+	    <div class="col-md-9">
+	      <input class="form-control" type="date" id="wedding_date" placeholder="日付をお選びください。">
+	      <small class="form-text">結婚式のお日にちを選択してください。</small>
+	    </div>
+	  </div>
 
+	  <!--DVD仕上がり予定日-->
+	  <div class="form-group row">
+	    <label class="col-md-3 col-form-label pt-0" for="delivery_date">DVD仕上がり予定日
+	      <span class="badge badge-danger">必須</span>
+	    </label>
+	    <div class="col-md-9">
+	      <input class="form-control" type="date" id="delivery_date" min="2019-01-03" placeholder="日付をお選びください。">
+	      <small class="form-text">挙式の1週間前までにDVDが必要な場合が多いため、仕上がり予定日を挙式日の1週間前に設定しております。</small>
+	    </div>
+	  </div>
+
+	  <!--小計：基本料金-->
+	  <div class="form-group row">
+	    <label class="col-md-3 col-form-label pt-0">基本料金（税込み）</label>
+	    <div class="col-md-9">
+	      <div class="input-group">
+		<input type="text" class="form-control text-right" id="sum_base" value="32,400" readonly>
+		<div class="input-group-append">
+		  <label class="input-group-text">円</label>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!--オプションメニュー-->
+
+	  
 	</form>
 	</div>
 	</div>
