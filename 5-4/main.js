@@ -1,3 +1,5 @@
+Vue.config.devtools = true;
+
 //数値を通貨書式「#.###.###」に変換するフィルター
 Vue.filter('number_format', function(val) {
     return val.toLocaleString();
@@ -36,7 +38,7 @@ var app = new Vue({
     methods: {
 	//税抜金額を税込金額に変換する関数
 	incTax: function (untaxed) {
-	    return Math.floor(untaxed * (1 + taxRate));
+	    return Math.floor(untaxed * (1 + this.taxRate));
 	},
 	//日付の差を求める関数
 	getDateDiff: function (dateString1, dateString2) {
@@ -61,6 +63,7 @@ var app = new Vue({
     computed: {
 	//オプション「BGM手配」の税込金額を返す算出プロパティ
 	taxedOpt1: function() {
+	    //return 1000;
 	    return this.incTax(this.opt1_price);
 	},
 	//オプション「撮影」の税込金額を返す算出プロパティ
@@ -80,7 +83,7 @@ var app = new Vue({
 	    //割増料金
 	    var addPrice = 0;
 	    //納期までの残りの日数を計算
-	    var dateDiff = this.getDateDiff(delivery_date.value,
+	    var dateDiff = this.getDateDiff(this.delivery_date,
 				       (new Date()).toLocaleString());
 	    //割増料金を求める
 	    if(21 <= dateDiff && dateDiff < 30) {
@@ -136,7 +139,7 @@ var app = new Vue({
 	    }
 	    optPrice += this.opt4_num * this.opt4_price;
 	    //オプション料金（税込み）を返す
-	    return incTax(optPrice);
+	    return this.incTax(optPrice);
 	},
 	//合計金額（税込）を返す算出プロパティ
 	taxedTotalPrice: function() {
