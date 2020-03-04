@@ -98,7 +98,7 @@ var app = new Vue({
 		//納期が2週間未満の場合
 		addPrice = this.addPrice3;
 	    }
-	    else if (3 <= dateDiff && dateDiff < 7) {
+	    else if (3 < dateDiff && dateDiff < 7) {
 		//納期が1週間未満の場合
 		addPrice = this.addPrice4;
 	    }
